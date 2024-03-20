@@ -1,69 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size: 20px;">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet"href="assests/normalize.css">
-    <style>
-        section{
-            width: 100vw;
-            height: 100vh;
-            background-color: palevioletred;
-            position: relative;
+    <title>CSS Transition Ex 02</title>
 
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+
+        body {
+            background-color: lightblue;
         }
-        section>div{
-            width: 250px;
-            height: 250px;
+
+        div {
+            width: 200px;
+            height: 200px;
             border-radius: 100%;
             background-color: gray;
 
             position: absolute;
             top: 0;
             bottom: 0;
-            right: 0;
             left: 0;
+            right: 0;
             margin: auto;
         }
-        section>div>h3{
+
+        div>h3 {
             width: fit-content;
             height: fit-content;
+            color: white;
+
             position: absolute;
-            color: red;
             top: 0;
             bottom: 0;
-            right: 0;
             left: 0;
+            right: 0;
             margin: auto;
         }
-        div::before{
+
+        div::before {
             content: "";
             border: 10px solid white;
+            border-top-color: red;
             border-radius: 100%;
+
             position: absolute;
-            color: red;
             top: 0;
             bottom: 0;
-            right: 0;
             left: 0;
+            right: 0;
             margin: auto;
-
         }
-        div:hover::before{
+
+        div:hover::before {
             transform: rotate(360deg);
             transition-duration: 3s;
         }
+
     </style>
 
 </head>
+
 <body>
-<section>
-    <div>
-        <h3>
-            RAND
-        </h3>
-    </div>
-    <div></div>
-</section>
+
+<div>
+
+    <h3>RWAD</h3>
+
+</div>
+
 </body>
+
 </html>
